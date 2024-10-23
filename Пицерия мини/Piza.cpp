@@ -49,7 +49,7 @@ int main() {
         int pizzaCount = 0;
         int fancyDrinks = 0;
 
-        // Выбор пиццы
+      
         cout << "**Выберите пиццу** (-1 для отмены):\n";
         for (int i = 0; i < PIZZA_COUNT; ++i) {
             cout << i + 1 << ". " << pizzas[i].name << " - " << pizzas[i].price << " руб.\n";
@@ -68,7 +68,6 @@ int main() {
             }
         }
 
-        // Выбор закусок
         cout << "**Выберите закуску** (-1 для отмены):\n";
         for (int i = 0; i < SNACK_COUNT; ++i) {
             cout << i + 1 << ". " << snacks[i].name << " - " << snacks[i].price << " руб.\n";
@@ -83,7 +82,6 @@ int main() {
             }
         }
 
-        // Выбор напитков
         cout << "**Выберите напиток** (-1 для отмены):\n";
         for (int i = 0; i < DRINK_COUNT; ++i) {
             cout << i + 1 << ". " << drinks[i].name << " - " << drinks[i].price << " руб.\n";
@@ -104,7 +102,6 @@ int main() {
             }
         }
 
-        // Применение общей скидки
         if (totalCost > ORDER_DISCOUNT_THRESHOLD) {
             totalCost *= 0.85;
         }
